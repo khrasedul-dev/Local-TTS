@@ -2,6 +2,8 @@
 
 A powerful, locally-run Text-to-Speech (TTS) application built with the **Kokoro TTS engine**. This desktop application provides a modern GUI for generating natural-sounding speech in multiple languages and accents without requiring cloud services.
 
+![Kokoro Local TTS Demo](assets/demo.png)
+
 ## Features
 
 ✨ **Multi-Language Support**
