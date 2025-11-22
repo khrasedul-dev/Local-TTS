@@ -39,34 +39,45 @@ A powerful, locally-run Text-to-Speech (TTS) application built with the **Kokoro
 
 ## Installation
 
-### Prerequisites
+### ⚡ Quick Start (Automated)
 
-- Python 3.10 ( Recommend ) or higher
-- 2GB+ disk space for model files
-- GPU recommended (NVIDIA CUDA or Apple Metal for faster generation)
+**Windows:**
 
-### Setup
+- Double-click `install.bat`
+- Wait 5-10 minutes
+- Double-click `run_app.bat`
 
-1. **Clone or download this repository**
+**macOS/Linux:**
 
-2. **Create a virtual environment** (recommended)
+```bash
+chmod +x install.sh && ./install.sh
+source .venv/bin/activate
+python app.py
+```
 
-   ```bash
-   python -m venv .venv
-   .venv\Scripts\activate  # On Windows
-   source .venv/bin/activate  # On macOS/Linux
-   ```
+### Manual Setup
 
-3. **Install dependencies**
+**Requirements:** Python 3.10+ | 2GB disk | 500MB download
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Windows:**
 
-4. **Run the application**
-   ```bash
-   python app.py
-   ```
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+python -m pip install torch==2.1.2 torchaudio==2.1.2 torchvision==0.16.2 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r requirements.txt
+python app.py
+```
+
+**macOS/Linux:**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install torch==2.1.2 torchaudio==2.1.2 torchvision==0.16.2
+python -m pip install -r requirements.txt
+python app.py
+```
 
 ## Usage
 

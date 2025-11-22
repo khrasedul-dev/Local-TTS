@@ -1,3 +1,50 @@
-__pycache__/
+# Virtual Environment
 .venv/
+venv/
+env/
+ENV/
 
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Model Cache (Large files)
+*.pt
+*.pth
+*.ckpt
+models/
+checkpoints/
+.cache/
+huggingface_hub_cache/
+
+# Audio Output
+*.wav
+*.mp3
+local_tts.wav
+
+# Logs
+install_log.txt
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
